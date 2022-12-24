@@ -1,14 +1,5 @@
 import mongoose from 'mongoose';
 
-const AddressSchema = mongoose.Schema({
-  city: String,
-  street: String,
-  houseNumber: String,
-  state: String,
-  pincode: Number,
-  country: String,
-});
-
 const UserProfileSchema = new mongoose.Schema(
   {
     name: {
@@ -39,7 +30,13 @@ const UserProfileSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
-    address: AddressSchema,
+    city: String,
+    street: String,
+    houseNumber: String,
+    state: String,
+    pincode: Number,
+    country: String,
+
     creator: {
       type: String,
       required: true,
