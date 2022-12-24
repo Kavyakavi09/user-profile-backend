@@ -92,7 +92,7 @@ export const resetPasswordMail = async (name, email, token) => {
       html:
         '<p> Hi ' +
         name +
-        ', Please click <a href="https://userprofily.netlify.app/reset/' +
+        ', Please click <a href="https://userprofily.netlify.app/#/reset/' +
         token +
         '"> here </a> to reset your password.The link will be expired in 15 minutes.</p>',
     };
